@@ -205,7 +205,8 @@ nav {
   background-repeat: no-repeat;
 }
 .recipe {
-  font-size: 21px;
+  font-size: 28px;
+  padding: 2em;
 }
 
 /* @media screen and (max-width: 1280px) {
