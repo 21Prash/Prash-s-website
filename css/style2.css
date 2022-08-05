@@ -1,0 +1,54 @@
+:root {
+    --cyan: rgb(14, 186, 205);
+    --orange: rgb(252, 157, 69);
+    --red: rgb(243, 82, 71);
+    --navy: rgb(2, 115, 129);
+    --brown: rgb(68, 11, 17);
+    --white: rgb(250, 229, 229);
+    --gradient1: rgba(255, 75, 31, 0.8);
+    --gradient2: rgba(31, 221, 255, 0.5);
+}
+@font-face {
+    font-family: TuT;
+    src: url("tut.otf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "TuT", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: gray;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background-color: brown;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    background-color: coral;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: 90px;
+    background-image: url(../fotos/logo.png);
+    background-size: contain;
+  }
+.navbar-menu a{
+    padding: 5px;;
+    font-size: 1.5rem;
+    flex-direction: row;
+}
+.menu-toggler{
+    display: none;
+}
