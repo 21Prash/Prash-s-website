@@ -19,6 +19,8 @@
     font-family: "TuT", sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
+}
+body{
     background-color: gray;
 }
 html {
@@ -26,29 +28,62 @@ html {
 }
 
 .navbar{
-    background-color: brown;
+    position: fixed;
     height: 20vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 1.5em;
+    background-color: brown;
 }
 .header{
-    background-color: coral;
+    width: 100vw;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-    width: 150px;
-    height: 90px;
+    /* flex: 1; */
+    min-width: 150px;
+    min-height: 90px;
+    max-height: 300px;
+    max-width: 180px;
     background-image: url(../fotos/logo.png);
     background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .navbar-menu{
+    display: flex;
+    justify-content: space-around;
   }
 .navbar-menu a{
-    padding: 5px;;
     font-size: 1.5rem;
-    flex-direction: row;
+    flex: 1;
+    color: var(--navy);
+    transition: 0.2s linear;
+
 }
-.menu-toggler{
+.navbar-menu a:hover{
+    color: var(--cyan) !important;
+}
+.menu-toggler {
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
     display: none;
+  }
+.menu-toggler span {
+    display: block;
+    height: 3px;
+    background-color: rgb(238, 55, 86);
+    margin: 6px 0;
+    position: relative;
+    transition: 0.3s linear;
+  }
+
+.content{
+    padding: 2em;
 }
