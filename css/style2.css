@@ -32,13 +32,14 @@ html {
     height: 20vh;
     display: flex;
     margin-bottom: 1.5em;
-    background-color: brown;
+    background-color: transparent;
 }
 .header{
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1.5em;
 }
 
 .logo {
@@ -50,13 +51,14 @@ html {
     background-image: url(../fotos/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
-  }
-  .navbar-menu{
-    display: flex;
+}
+.navbar-menu{
+      display: flex;
     justify-content: space-around;
   }
 .navbar-menu a{
     font-size: 1.5rem;
+    padding: 0 10px;
     flex: 1;
     color: var(--navy);
     transition: 0.2s linear;
@@ -84,6 +86,35 @@ html {
     transition: 0.3s linear;
   }
 
+  #home {
+    height: 100vh;
+    min-height: 500px;
+    background: url(../fotos/bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }  
 .content{
-    padding: 2em;
+    margin-top: 40vh ;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    line-height: 38px;
 }
+.cursor{
+    display: inline-block;
+}
+
+.typewriter h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: auto;
+    color: rgb(58, 71, 71);
+    font-size: 1.6rem;
+    animation: 
+        typing 5s steps(50,start) infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+  to { width: 100% }
+  }
